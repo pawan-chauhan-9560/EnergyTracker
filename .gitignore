@@ -1,0 +1,25 @@
+# Visual Studio
+.vs/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# Build
+bin/
+obj/
+*.dll
+*.exe
+*.app
+*.log
+
+# Rider
+.idea/
+
+# Node/Frontend (if you have React inside the same repo)
+node_modules/
+dist/
+build/
+
+# EF Core Migrations (optional, if you want to exclude)
+# Migrations/
