@@ -1,4 +1,5 @@
 using EnergyManagementSystem.Data;
+using EnergyManagementSystem.Services;
 using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -7,6 +8,7 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
+builder.Services.AddScoped<JwtService>();
 
 // Add DbContext
 builder.Services.AddDbContext<AppDbContext>(options =>
